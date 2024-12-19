@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="age-calculator">
+      <div class="header">
+        <img src="https://img.freepik.com/premium-vector/age-calculator-concept_230864-1.jpg" 
+             alt="Age Calculator Icon" 
+             class="icon">
+        <h1 class="title">Age Calculator</h1>
+        <p class="subtitle">Calculate your exact age from your date of birth</p>
+      </div>
+      <form id="age-form" class="form">
+        <label for="dob" class="form-label">Enter Your Birth Date</label>
+        <input type="date" id="dob" class="form-control mb-4" required>
+        <button type="submit" class="btn btn-primary w-100">Calculate</button>
+      </form>
+      <div class="result mt-4">
+        <h2>Your Age:</h2>
+        <p id="result" class="age-display">--</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
